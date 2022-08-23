@@ -1,0 +1,259 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Sprites\Knight_Survival.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Sons\**" />
+    <EmbeddedResource Remove="Sons\**" />
+    <None Remove="Sons\**" />
+    <Page Remove="Sons\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sounds\ClickInterface.wav" />
+    <None Remove="Sounds\Jeremy Blake  Powerup  NO COPYRIGHT 8bit Music.mp3" />
+    <None Remove="Sounds\MouseOverInterface.wav" />
+    <None Remove="Sounds\strike-the-earth-plains-of-passage-shovel-knight-ost.mp3" />
+    <None Remove="Sounds\Test.mp3" />
+    <None Remove="Sprites\background_forest.png" />
+    <None Remove="Sprites\d.png" />
+    <None Remove="Sprites\Essai perso.png" />
+    <None Remove="Sprites\flag-fr.png" />
+    <None Remove="Sprites\flag-uk.png" />
+    <None Remove="Sprites\HeartLife.png" />
+    <None Remove="Sprites\JoueurAnimationAttackDroite_1.png" />
+    <None Remove="Sprites\JoueurAnimationAttackDroite_2.png" />
+    <None Remove="Sprites\JoueurAnimationAttackDroite_3.png" />
+    <None Remove="Sprites\JoueurAnimationAttackGauche_1.png" />
+    <None Remove="Sprites\JoueurAnimationAttackGauche_2.png" />
+    <None Remove="Sprites\JoueurAnimationAttackGauche_3.png" />
+    <None Remove="Sprites\JoueurAnimationCourseDroite_1.png" />
+    <None Remove="Sprites\JoueurAnimationCourseDroite_2.png" />
+    <None Remove="Sprites\JoueurAnimationCourseDroite_3.png" />
+    <None Remove="Sprites\JoueurAnimationCourseDroite_4.png" />
+    <None Remove="Sprites\JoueurAnimationCourseGauche_1.png" />
+    <None Remove="Sprites\JoueurAnimationCourseGauche_2.png" />
+    <None Remove="Sprites\JoueurAnimationCourseGauche_3.png" />
+    <None Remove="Sprites\JoueurAnimationCourseGauche_4.png" />
+    <None Remove="Sprites\JoueurAnimationStandDroite_1.png" />
+    <None Remove="Sprites\JoueurAnimationStandDroite_2.png" />
+    <None Remove="Sprites\JoueurAnimationStandGauche_1.png" />
+    <None Remove="Sprites\JoueurAnimationStandGauche_2.png" />
+    <None Remove="Sprites\Knight_Survival.ico" />
+    <None Remove="Sprites\no_sound.png" />
+    <None Remove="Sprites\Perso 01.png" />
+    <None Remove="Sprites\PlatformBaseSol.png" />
+    <None Remove="Sprites\PlatformCote.png" />
+    <None Remove="Sprites\PlatformHaut.png" />
+    <None Remove="Sprites\platform_haute.png" />
+    <None Remove="Sprites\platform_herbes-terre %281%29.png" />
+    <None Remove="Sprites\platform_herbes-terre %282%29.png" />
+    <None Remove="Sprites\platform_herbes-terre %283%29.png" />
+    <None Remove="Sprites\platform_herbes-terre %284%29.png" />
+    <None Remove="Sprites\platform_herbe_droite.png" />
+    <None Remove="Sprites\platform_herbe_gauche.png" />
+    <None Remove="Sprites\platform_herbe_milieu.png" />
+    <None Remove="Sprites\platform_terre.png" />
+    <None Remove="Sprites\Potion heal transparent.png" />
+    <None Remove="Sprites\Potion heal.png" />
+    <None Remove="Sprites\q.png" />
+    <None Remove="Sprites\s.png" />
+    <None Remove="Sprites\sound.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-mort.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk-Droite1.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk-Droite2.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk1-Droite.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk1.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk2- Droite.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk2-Droite.png" />
+    <None Remove="Sprites\Sprite-ennemi-Crawler-1-walk2.png" />
+    <None Remove="Sprites\z.png" />
+    <None Remove="Sprites\zqsd.png" />
+    <None Remove="Styles\AncientModernTales-a7Po.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Sounds\ClickInterface.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\Jeremy Blake  Powerup  NO COPYRIGHT 8bit Music.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\MouseOverInterface.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\Test.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sprites\Knight_Survival.ico" />
+    <Resource Include="Sprites\d.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\HeartLife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grumson.cSharp.GamePad" Version="1.0.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="IUTGame">
+      <HintPath>IUTGame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Sounds\strike-the-earth-plains-of-passage-shovel-knight-ost.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Sprites\background_forest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Essai perso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\flag-fr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\flag-uk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackDroite_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackDroite_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackDroite_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackGauche_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackGauche_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationAttackGauche_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseDroite_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseDroite_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseDroite_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseDroite_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseGauche_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseGauche_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseGauche_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationCourseGauche_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationStandDroite_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationStandDroite_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationStandGauche_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\JoueurAnimationStandGauche_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\no_sound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\PlatformBaseSol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\PlatformCote.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\PlatformHaut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_haute.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbes-terre (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbes-terre (2).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbes-terre (3).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbes-terre (4).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbe_droite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbe_gauche.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_herbe_milieu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\platform_terre.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Potion heal transparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Potion heal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\q.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\s.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\sound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Sprite-ennemi-Crawler-1-mort.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Sprite-ennemi-Crawler-1-walk-Droite1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Sprite-ennemi-Crawler-1-walk-Droite2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Sprite-ennemi-Crawler-1-walk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\Sprite-ennemi-Crawler-1-walk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\z.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Styles\AncientModernTales-a7Po.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

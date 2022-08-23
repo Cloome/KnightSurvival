@@ -1,0 +1,22 @@
+﻿<Application x:Class="KnightSurvival.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:KnightSurvival"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <FontFamily x:Key="KnightSurvivalFont">./Styles/AncientModernTales-a7Po.ttf#Ancient Modern Tales</FontFamily>
+
+            <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="{StaticResource KnightSurvivalFont}"/>
+            </Style>
+            
+            <ResourceDictionary.MergedDictionaries>
+                
+                <ResourceDictionary Source="styles\SliderCustom.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
